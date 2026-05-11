@@ -1,0 +1,33 @@
+
+/* Styling guide 
+
+Text content
+
+Spacing -> letter spacing / line height
+Styling -> normal / bold
+Size    -> sm  / a / p / h5 - h1 
+Family  -> poppins 'san-serif'
+Color   
+
+Box styling
+
+Spacing -> Margin / padding  
+Styling -> border radius 
+Size    -> box-sizing
+Color   -> 
+
+Element Container 
+
+Spacing -> Margin / padding
+Styling -> flex / grid
+Size    -> box-sizing
+Color
+
+*/
+
+
+/* Resource center */
+
+h1{
+    color: aqua;
+}

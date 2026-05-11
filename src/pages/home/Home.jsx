@@ -1,6 +1,7 @@
 import { useState } from "react"
 // import { useEffect } from "react";
 import recentProjects from "./data"
+import '../../App.css'
 
 function Home(){
 
