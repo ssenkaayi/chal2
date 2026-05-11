@@ -1,11 +1,20 @@
-
+import { useState } from "react"
+// import { useEffect } from "react";
+import recentProjects from "./data"
 
 function Home(){
+
+    const [projects,setProject] = useState(recentProjects);
+
+
+
+    console.log(projects)
     return(
-        <div className="page-container">
+        <div >
+
             <div className="hero">
 
-                <div hero-content-container>
+                <div className="hero-content-container">
                     <h3>
                         Hello, my name is Charles Ssenkaayi
                     </h3>
@@ -22,7 +31,7 @@ function Home(){
 
             </div>
 
-            <body>
+            <div>
 
                 <div className="tech-stack">
 
@@ -38,20 +47,30 @@ function Home(){
 
                 <div className="recent-projects">
 
-                    <h3>Recent projects</h3>
+                    <h3>Projects</h3>
 
-                    <div className="project-card-container">
-                        <div className="project-card">
-                            <img src="" alt="" />
-                            <div>
-                                <h4>Project name</h4>
-                                <p>Description</p>
+                    {projects.map((project)=>
+
+                        <div className="project-card-container">
+
+                            <h3>{project.name}</h3>
+                            
+                            <div key={project.name} className="project-card">
+                                <img width='366px'  src={project.image_path} alt={project.name} />
+                                <div>
+                                    <h4>{project.name}</h4>
+                                    <p>{project.des}</p>
+                                </div>
                             </div>
+                            
                         </div>
-                    </div>
+
+                    )}
+
+                    <a>More projects +</a>
 
                 </div>
-            </body>
+            </div>
         </div>
 
     )
