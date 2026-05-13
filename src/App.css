@@ -12,7 +12,7 @@ Color
 Box styling
 
 Spacing -> Margin / padding  
-Styling -> border radius 
+Styling -> border & border radius 
 Size    -> box-sizing
 Color   -> background-color
 
@@ -63,9 +63,68 @@ tartiary
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /* ----------- Global styling ----------- */
 
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+
 h1{
-    color: aqua;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 1.25;
+    letter-spacing: -2px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.25;
+    letter-spacing: -2px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: -1px;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.sm{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+li{
+    list-style: none;
 }
