@@ -4,7 +4,7 @@
 Text content
 
 Spacing -> letter spacing / line height
-Styling -> normal / bold
+Styling -> font-weight / text-decoration & list-style
 Size    -> sm  / a / p / h5 - h1 
 Family  -> poppins 'san-serif'
 Color   
@@ -14,19 +14,57 @@ Box styling
 Spacing -> Margin / padding  
 Styling -> border radius 
 Size    -> box-sizing
-Color   -> 
+Color   -> background-color
 
 Element Container 
 
 Spacing -> Margin / padding
 Styling -> flex / grid
 Size    -> box-sizing
-Color
+Color   -> background-color
 
 */
 
 
-/* Resource center */
+/*
+
+----------- Resource center ----------- 
+
+Typography
+
+1.Spacing
+
+letter spacing -> default:0 / heading: -1px || -2px
+
+line-height -> default:1.5 / headings:1.25
+
+2.Styling
+
+font-weight -> normal:500 / headings:700
+
+text-decoration -> none
+
+list-style -> none
+
+3.Size (scale:1.25 || base:16px)
+
+sm -> 12px  / a->16px /p-> 20px / h5 -> 25px / h4 -> 32px / h3 -> 40px / h2 -> 50px h1 -> 62px
+
+4. Family  -> poppins 'san-serif'
+
+5. Color
+
+primary
+
+secondary
+
+tartiary
+
+*/
+
+
+
+/* ----------- Global styling ----------- */
 
 h1{
     color: aqua;
