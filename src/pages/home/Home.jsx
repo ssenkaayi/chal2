@@ -18,7 +18,7 @@ function Home(){
                         Hello, my name is Charles Ssenkaayi
                     </h3>
                     <h1 className="hero-h1">
-                        And i am a <span className="hero-highlight">web</span> developer
+                        And i am a <span className="hero-highlight">web developer</span> 
                     </h1>
                     <p className="hero-para">Experience in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
@@ -51,14 +51,16 @@ function Home(){
                     <div className="project-card-container">
                         {projects.map((project)=>
 
-                            <div className="project-card">
+                            <div key={project.name} className="project-card">
 
-                                <div key={project.name} className="project-card">
-                                    <img className="project-img" width='366px'  src={project.image_path} alt={project.name} />
-                                    <div className="project-des">
-                                        <h5>{project.name}</h5>
-                                        <p>{project.des}</p>
-                                    </div>
+                                <div className="project-img-container">
+                                    <img className="project-img" src={project.image_path} alt={project.name} />
+
+                                </div>
+
+                                <div className="project-des">
+                                    <h5 className="project-h5">{project.name}</h5>
+                                    <p>{project.des}</p>
                                 </div>
                                 
                             </div>
