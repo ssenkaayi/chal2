@@ -12,31 +12,33 @@ Color
 Box styling
 
 Spacing -> Margin / padding  
-Styling -> border & border radius 
-Size    -> box-sizing
+Styling -> border & border-radius 
+Size    -> box-content & padding
 Color   -> background-color
+box-sizing -> box-content
 
 Element Container 
 
 Spacing -> Margin / padding
 Styling -> flex / grid
-Size    -> box-sizing
+Size    -> width / height / html-elements
 Color   -> background-color
 
 */
 
+/* ---------------------- Resource center ----------------------   */
 
 /*
 
------------ Resource center ----------- 
-
-Typography
+----------- Typography -----------
 
 1.Spacing
 
 letter spacing -> default:0 / heading: -1px || -2px
 
 line-height -> default:1.5 / headings:1.25
+
+text-alignment -> defualt:left / headings: center
 
 2.Styling
 
@@ -60,6 +62,14 @@ secondary
 
 tartiary
 
+----------- css box -----------
+
+size: html-content & padding
+
+padding -> 
+
+margin -> heading:10px / paras:20px / buttons:30px / sub-sections:50px / sections:100px
+
 */
 
 
@@ -68,63 +78,197 @@ tartiary
 
 /* ----------- Global styling ----------- */
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.page-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body{
     font-family: "Poppins", sans-serif;
 
 }
 
-h1{
+h1,h2,h3,h4,h5{
     font-weight: 700;
-    font-size: 62px;
     line-height: 1.25;
+    text-align: center;
+}
+
+h1{
+    
+    font-size: 62px;
     letter-spacing: -2px;
 }
 
 h2{
-    font-weight: 700;
+    
     font-size: 50px;
-    line-height: 1.25;
     letter-spacing: -2px;
 }
 
 h3{
-    font-weight: 700;
+    
     font-size: 40px;
-    line-height: 1.25;
     letter-spacing: -1px;
+    text-align: left;
 }
 
 h4{
-    font-weight: 700;
+
     font-size: 32px;
-    line-height: 1.25;
+    text-align: left;
 }
 
 h5{
-    font-weight: 700;
+
     font-size: 25px;
-    line-height: 1.25;
+    text-align: left;
+}
+
+p,a,.sm{
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 p{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;
+    
+    font-size: 20px; 
 }
 
 a{
-    font-weight: 500;
+    
     font-size: 16px;
-    line-height: 1.5;
     text-decoration: none;
+    /* display: inline-block; */
 }
 
 .sm{
-    font-weight: 500;
+
     font-size: 12px;
-    line-height: 1.5;
 }
 
 li{
     list-style: none;
+}
+
+/* ----------- Sections ----------- */
+
+/* nav-section */
+
+.nav{
+    height:100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.nav-logo{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 18px;
+}
+/* hero-section */
+
+.hero{
+    height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content-container{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.hero-h1{
+    margin-bottom: 20px;
+}
+
+.hero-h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero-para{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.hero-social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+/* feature-section */
+
+.feature{
+    height: 865px;
+}
+
+.tech-stack-container{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tech-stack{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-h3{
+    margin-bottom: 50px;
+}
+
+.project-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card{
+    width: 380px;
+    height: 380px;
+}
+
+.project-link{
+    text-align: center;
+}
+
+/* foot-section */
+
+.footer{
+    height: 100px;
 }

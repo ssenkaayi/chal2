@@ -7,8 +7,6 @@ function Home(){
 
     const [projects,setProject] = useState(recentProjects);
 
-
-
     console.log(projects)
     return(
         <div >
@@ -16,14 +14,14 @@ function Home(){
             <div className="hero">
 
                 <div className="hero-content-container">
-                    <h3>
+                    <h3 className="hero-h3">
                         Hello, my name is Charles Ssenkaayi
                     </h3>
-                    <h1>
-                        And i am a web developer
+                    <h1 className="hero-h1">
+                        And i am a <span className="hero-highlight">web</span> developer
                     </h1>
-                    <p>Experience in HTML, CSS and Javascript</p>
-                    <ul>
+                    <p className="hero-para">Experience in HTML, CSS and Javascript</p>
+                    <ul className="hero-social-links">
                         <li>Resume</li>
                         <li>Git</li>
                         <li>LinkedIn</li>
@@ -32,13 +30,13 @@ function Home(){
 
             </div>
 
-            <div>
+            <div className="feature">
 
-                <div className="tech-stack">
+                <div className="tech-stack-container">
 
                     <h3>Tech stack</h3>
 
-                    <ul>
+                    <ul className="tech-stack">
                         <li>MongoDb</li>
                         <li>Express</li>
                         <li>React</li>
@@ -46,29 +44,29 @@ function Home(){
                     </ul>
                 </div>
 
-                <div className="recent-projects">
+                <div className="projects">
 
-                    <h3>Projects</h3>
+                    <h3 className="project-h3">Projects</h3>
 
-                    {projects.map((project)=>
+                    <div className="project-card-container">
+                        {projects.map((project)=>
 
-                        <div className="project-card-container">
+                            <div className="project-card">
 
-                            <h3>{project.name}</h3>
-                            
-                            <div key={project.name} className="project-card">
-                                <img width='366px'  src={project.image_path} alt={project.name} />
-                                <div>
-                                    <h4>{project.name}</h4>
-                                    <p>{project.des}</p>
+                                <div key={project.name} className="project-card">
+                                    <img className="project-img" width='366px'  src={project.image_path} alt={project.name} />
+                                    <div className="project-des">
+                                        <h5>{project.name}</h5>
+                                        <p>{project.des}</p>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            
-                        </div>
 
-                    )}
+                        )}
+                    </div>
 
-                    <a>More projects +</a>
+                    <a className="project-link" >More projects +</a>
 
                 </div>
             </div>

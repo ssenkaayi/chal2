@@ -3,7 +3,7 @@ function Footer(){
 
     return(
         <>
-            <div>
+            <div className="footer">
                 <h5>footer section</h5>
             </div>
         </>
