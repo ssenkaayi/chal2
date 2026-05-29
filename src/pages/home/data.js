@@ -16,7 +16,7 @@ const recentProjects = [
     },
     {
         "name":"Portifolio app",
-        "des":"Independent Portfolio Website Development using vanilla HTML and CSS",
+        "des":"Independent Portfolio Website Development using vanilla HTML, CSS and Javascript",
         "image_path":"./src/images/project-images/portfolio.png",
         "src":"https://ssenkaayi.github.io/html-css-portfolio/"
     },

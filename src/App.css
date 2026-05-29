@@ -1,3 +1,20 @@
+/* 
+
+1. styling
+2. css variables & functions
+3. responsive design
+
+*/
+
+
+/* 
+
+color guidance : 60 / 30 10 rule
+
+Neutral (60%) -> White / Black / Gray
+Primary (30%) -> Tint / Base / Shade
+Secondary (10%) -> Tint / Base / Shade
+*/
 
 /* Styling guide 
 
@@ -56,11 +73,16 @@ sm -> 12px  / a->16px /p-> 20px / h5 -> 25px / h4 -> 32px / h3 -> 40px / h2 -> 5
 
 5. Color
 
-primary
+primary:  base->#2B7ED1 / tint->#bfd8f1 / shade->#1e5892
 
-secondary
+secondary: base->#FF8D28 / tint / shade
 
-tartiary
+black: 000000
+
+white: ffffff
+
+gray: tint->#EFF2F5 / base->#1C222C / shade->#0A0C10
+
 
 ----------- css box -----------
 
@@ -98,6 +120,7 @@ h1,h2,h3,h4,h5{
     font-weight: 700;
     line-height: 1.25;
     text-align: center;
+    color: #0A0C10;
 }
 
 h1{
@@ -134,6 +157,7 @@ h5{
 p,a,.sm{
     font-weight: 500;
     line-height: 1.5;
+    color: #1C222C;
 }
 
 p{
@@ -169,6 +193,7 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color:#2B7ED1; ;
  
 }
 
@@ -234,6 +259,7 @@ li{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: #2B7ED1;
 }
 
 .tech-stack{
@@ -257,12 +283,14 @@ li{
     gap: 20px;
     justify-content: center;
     margin-bottom: 50px;
+    background-color: #bfd8f1;
     
 }
 
 .project-card{
     width: 380px;
     height: 380px;
+    background-color: #ffffff;
 
 }
 
@@ -296,4 +324,11 @@ li{
 
 .footer{
     height: 100px;
+    background-color: #0A0C10;
+    
+}
+
+.footer-text{
+    color: #ffffff;
+    text-align: center;
 }
