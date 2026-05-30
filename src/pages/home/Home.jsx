@@ -1,5 +1,5 @@
 import { useState } from "react"
-// import { useEffect } from "react";
+import { Link } from "react-router-dom"
 import recentProjects from "./data"
 import '../../App.css'
 
@@ -22,7 +22,7 @@ function Home(){
                     </h1>
                     <p className="hero-para">Experience in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
-                        <li className="btn btn-link">Resume</li>
+                        <li className="btn hero-btn-link">Resume</li>
                         <li>Git</li>
                         <li>LinkedIn</li>
                     </ul>
@@ -68,7 +68,7 @@ function Home(){
                         )}
                     </div>
 
-                    <a className="project-link" >More projects +</a>
+                    <span className="project-link"><Link  className="btn project-btn-link" to='/experience'  >More projects +</Link></span>
 
                 </div>
             </div>

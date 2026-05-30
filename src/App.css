@@ -189,11 +189,13 @@ li{
     height:100px;
     margin-bottom: 20px;
     margin-top: 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:#2B7ED1; ;
+    background-color:#2B7ED1; 
+    color: #ffffff;
  
 }
 
@@ -207,6 +209,11 @@ li{
     flex-direction: row;
     justify-content: space-between;
     gap: 18px;
+    
+}
+
+.nav-links{
+    color: #ffffff;
 }
 /* hero-section */
 
@@ -232,7 +239,7 @@ li{
 
 .hero-h3{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .hero-para{
@@ -297,7 +304,7 @@ li{
     justify-content: center;
     margin-bottom: 50px;
     background-color: #bfd8f1;
-    padding: 20px 0;
+    padding: 30px 10px;
     
 }
 
@@ -333,6 +340,7 @@ li{
 
 .project-link{
     text-align: center;
+
 }
 
 /* foot-section */
@@ -353,15 +361,25 @@ li{
 /* Components */
 
 .btn{
-    padding: 10px 50px;
+    padding: 15px 50px;
 }
 
-.btn-link{
+.hero-btn-link{
     
     background-color: #2B7ED1;
+    color: #ffffff;
+}
+
+.project-btn-link{
+    background-color:#FF8D28 ;
+}
+
+.hero-highlight{
+
+    color: #FF8D28 ;
 }
 
 .tech-highlight{
-    padding: 20px 90px;
+    padding: 15px 90px;
     background-color: #ffffff;
 }

@@ -9,10 +9,10 @@ function Nav(){
                 </div>
 
                 <ul className="nav-menu">
-                    <li><Link to='/' >home</Link></li>
-                    <li><Link to='/skill' >skill</Link></li>
-                    <li><Link to='/experience' >experience</Link></li>
-                    <li><Link to='/about' >about</Link></li>
+                    <li><Link className="nav-links" to='/' >home</Link></li>
+                    <li><Link className="nav-links" to='/skill' >skill</Link></li>
+                    <li><Link className="nav-links" to='/experience' >experience</Link></li>
+                    <li><Link className="nav-links" to='/about' >about</Link></li>
                 </ul>
             </div>
         </>
