@@ -22,7 +22,7 @@ function Home(){
                     </h1>
                     <p className="hero-para">Experience in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
-                        <li>Resume</li>
+                        <li className="btn btn-link">Resume</li>
                         <li>Git</li>
                         <li>LinkedIn</li>
                     </ul>
@@ -34,13 +34,13 @@ function Home(){
 
                 <div className="tech-stack-container">
 
-                    <h3>Tech stack</h3>
+                    <h3 className="tech-stack-heading">Tech stack</h3>
 
                     <ul className="tech-stack">
-                        <li>MongoDb</li>
-                        <li>Express</li>
-                        <li>React</li>
-                        <li>Node</li>
+                        <li className="tech-highlight">MongoDb</li>
+                        <li className="tech-highlight">Express</li>
+                        <li className="tech-highlight">React</li>
+                        <li className="tech-highlight">Node</li>
                     </ul>
                 </div>
 
