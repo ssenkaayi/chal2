@@ -6,6 +6,7 @@ import '../../App.css'
 function Home(){
 
     const [projects,setProject] = useState(recentProjects);
+    let resume_path = 'https://drive.google.com/file/d/1jOREjW-7AdR2r6MgmD-rt3Z1Lp7QigdN/view?usp=sharing'
 
     console.log(projects)
     return(
@@ -18,11 +19,11 @@ function Home(){
                         Hello, my name is Charles Ssenkaayi
                     </h3>
                     <h1 className="hero-h1">
-                        And i am a <span className="hero-highlight">web developer</span> 
+                        And i am a <span className="hero-highlight">Web Developer</span> 
                     </h1>
-                    <p className="hero-para">Experience in HTML, CSS and Javascript</p>
+                    <p className="hero-para">Skilled in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
-                        <li className="btn hero-btn-link">Resume</li>
+                        <Link className="btn hero-btn-link" to={resume_path }>Resume</Link>
                         <li>Git</li>
                         <li>LinkedIn</li>
                     </ul>
@@ -40,7 +41,7 @@ function Home(){
                         <li className="tech-highlight">MongoDb</li>
                         <li className="tech-highlight">Express</li>
                         <li className="tech-highlight">React</li>
-                        <li className="tech-highlight">Node</li>
+                        <li className="tech-highlight">Node Js</li>
                     </ul>
                 </div>
 

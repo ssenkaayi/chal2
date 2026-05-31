@@ -196,6 +196,7 @@ li{
     align-items: center;
     background-color:#2B7ED1; 
     color: #ffffff;
+    border-radius: 10px;
  
 }
 
@@ -247,7 +248,6 @@ li{
     margin-bottom: 50px;
 }
 
-
 .hero-social-links{
     display: flex;
     flex-direction: row;
@@ -259,7 +259,7 @@ li{
 /* feature-section */
 
 .feature{
-    height: 865px;
+    /* height: 865px; */
     margin-bottom: 100px;
 }
 
@@ -273,7 +273,8 @@ li{
     justify-content: center;
     background-color: #2B7ED1;
     margin-bottom: 50px;
-    padding:20px
+    padding:20px;
+    border-radius: 20px;
 }
 
 .tech-stack{
@@ -284,6 +285,7 @@ li{
 
 .tech-stack-heading{
     margin-bottom:40px ;
+    color: #ffffff;
 }
 
 /* project section */
@@ -305,6 +307,7 @@ li{
     margin-bottom: 50px;
     background-color: #bfd8f1;
     padding: 30px 10px;
+    border-radius: 10px;
     
 }
 
@@ -312,6 +315,8 @@ li{
     width: 380px;
     height: 380px;
     background-color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 10px;
 
 }
 
@@ -320,13 +325,15 @@ li{
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-
+    border: solid 2px #bfd8f1;
+    border-radius: 10px;
 }
 
 .project-img{
 
     width: 366px;
     height: 194px;
+    
 }
 
 .project-des{
@@ -349,6 +356,7 @@ li{
     height: 100px;
     background-color: #0A0C10;
     margin: 10px;
+    border-radius: 10px;
     
 }
 
@@ -362,6 +370,8 @@ li{
 
 .btn{
     padding: 15px 50px;
+    border: solid 2px #bfd8f1;
+    border-radius: 10px;
 }
 
 .hero-btn-link{
@@ -382,4 +392,5 @@ li{
 .tech-highlight{
     padding: 15px 90px;
     background-color: #ffffff;
+    border-radius: 10px;
 }
