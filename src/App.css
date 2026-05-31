@@ -97,8 +97,24 @@ margin -> heading:10px / paras:20px / buttons:30px / sub-sections:50px / section
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* creating css variables */
+
+:root{
+    /* colors variables */
+    --primary-base:#2B7ED1;
+    --primary-tint:#bfd8f1;
+    --primary-shade:#1e5892;
+    --secondar-base:#FF8D28;
+    --white:#ffffff;
+    --black:#000000;
+    --gray-base:#1C222C;
+    --gray-tint:#EFF2F5;
+    --gray-shade:#0A0C10;
+
+}
 
 /* ----------- Global styling ----------- */
+
 
 *{
     padding: 0;
@@ -274,7 +290,7 @@ li{
     background-color: #2B7ED1;
     margin-bottom: 50px;
     padding:20px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .tech-stack{
@@ -307,7 +323,7 @@ li{
     margin-bottom: 50px;
     background-color: #bfd8f1;
     padding: 30px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 
@@ -333,6 +349,7 @@ li{
 
     width: 366px;
     height: 194px;
+    border-radius: 10px;
     
 }
 
@@ -357,6 +374,9 @@ li{
     background-color: #0A0C10;
     margin: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -370,7 +390,6 @@ li{
 
 .btn{
     padding: 15px 50px;
-    border: solid 2px #bfd8f1;
     border-radius: 10px;
 }
 

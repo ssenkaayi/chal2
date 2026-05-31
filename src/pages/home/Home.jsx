@@ -52,7 +52,7 @@ function Home(){
                     <div className="project-card-container">
                         {projects.map((project)=>
 
-                            <div key={project.name} className="project-card">
+                            <Link to={project.url} key={project.name} className="project-card">
 
                                 <div className="project-img-container">
                                     <img className="project-img" src={project.image_path} alt={project.name} />
@@ -64,7 +64,7 @@ function Home(){
                                     <p>{project.des}</p>
                                 </div>
                                 
-                            </div>
+                            </Link>
 
                         )}
                     </div>

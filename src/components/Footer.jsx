@@ -4,7 +4,7 @@ function Footer(){
     return(
         <>
             <div className="footer">
-                <p className='footer-text'>footer section</p>
+                <p className='footer-text'>256@Chal2.com</p>
             </div>
         </>
     )
