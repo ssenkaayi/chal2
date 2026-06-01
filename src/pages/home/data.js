@@ -4,7 +4,7 @@ const recentProjects = [
 
     {
         "name":"Tour app",
-        "des":"Introduction to the development of single page application (SPA) using React",
+        "des":"Introduction to the fundamentals of single page application (SPA) using React",
         "image_path":"./src/images/project-images/tour.png",
         "url":"https://ssenkaayi.github.io/sekai-safaris/"
     },

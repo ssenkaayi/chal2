@@ -1,12 +1,16 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { FaLinkedinIn } from "react-icons/fa";
+import { PiGithubLogoFill } from "react-icons/pi";
 import recentProjects from "./data"
 import '../../App.css'
 
 function Home(){
 
     const [projects,setProject] = useState(recentProjects);
-    let resume_path = 'https://drive.google.com/file/d/1jOREjW-7AdR2r6MgmD-rt3Z1Lp7QigdN/view?usp=sharing'
+    let resume_path = 'https://drive.google.com/file/d/1jOREjW-7AdR2r6MgmD-rt3Z1Lp7QigdN/view?usp=sharing';
+    let git_path = 'https://github.com/ssenkaayi';
+    let linkedIn_path = 'https://www.linkedin.com/in/charles-ssenkaayi-6b6275246/';
 
     console.log(projects)
     return(
@@ -23,9 +27,9 @@ function Home(){
                     </h1>
                     <p className="hero-para">Skilled in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
-                        <Link className="btn hero-btn-link" to={resume_path }>Resume</Link>
-                        <li>Git</li>
-                        <li>LinkedIn</li>
+                        <li><Link className="btn hero-btn-link" to={resume_path }>Resume</Link></li>
+                        <Link to={git_path } className="hero-svg-container"><PiGithubLogoFill className="hero-svg  git-svg"/></Link>
+                        <Link to={linkedIn_path } className="hero-svg-container"><FaLinkedinIn className="hero-svg linkedIn-svg"/></Link>
                     </ul>
                 </div>
 
