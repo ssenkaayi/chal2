@@ -42,10 +42,10 @@ function Home(){
                     <h3 className="tech-stack-heading">Tech stack</h3>
 
                     <ul className="tech-stack">
-                        <li className="tech-highlight">MongoDb</li>
-                        <li className="tech-highlight">Express</li>
-                        <li className="tech-highlight">React</li>
-                        <li className="tech-highlight">Node Js</li>
+                        <li className="tech-highlight"><p>MongoDb</p></li>
+                        <li className="tech-highlight"><p>Express</p></li>
+                        <li className="tech-highlight"><p>React</p></li>
+                        <li className="tech-highlight"><p>Node Js</p></li>
                     </ul>
                 </div>
 
