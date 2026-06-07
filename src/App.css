@@ -109,6 +109,7 @@ html{
 :root{
 
     /* colors variables */
+
     --primary-base:#2B7ED1;
     --primary-tint:#bfd8f1;
     --primary-shade:#1e5892;
@@ -152,32 +153,27 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-    
     font-size: 6.2rem;
     letter-spacing: -2px;
 }
 
 h2{
-    
     font-size: 5rem;
     letter-spacing: -2px;
 }
 
 h3{
-    
     font-size: 4rem;
     letter-spacing: -1px;
     text-align: left;
 }
 
 h4{
-
     font-size: 3.2rem;
     text-align: left;
 }
 
 h5{
-
     font-size: 2.5rem;
     text-align: left;
 }
@@ -189,12 +185,10 @@ p,a,.sm{
 }
 
 p{
-    
     font-size: 2rem; 
 }
 
 a{
-    
     font-size: 1.6rem;
     text-decoration: none;
   
@@ -244,6 +238,7 @@ li{
 .nav-links{
     color: var(--white);
 }
+
 /* hero-section */
 
 .hero{
@@ -281,7 +276,7 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:3rem
+    gap:3rem;
 }
 
 .hero-svg{
@@ -296,7 +291,6 @@ li{
 
 .git-svg{
     color: var(--primary-base);
-  
 }
 
 .hero-svg-container{
@@ -308,7 +302,6 @@ li{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
     
 }
 
@@ -323,13 +316,13 @@ li{
 /* teck stack section */
 
 .tech-stack-container{
-    height: 20rem;
+    /* height: 20rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--primary-base);
     margin-bottom: 5rem;
-    padding:2rem;
+    padding:5rem 2rem;
     border-radius: 3rem;
 }
 
@@ -342,6 +335,12 @@ li{
 .tech-stack-heading{
     margin-bottom:4rem ;
     color: var(--white);
+}
+
+.tech-highlight{
+    padding: 1.5rem 9rem;
+    background-color: var(--white);
+    border-radius: 1rem;
 }
 
 /* project section */
@@ -368,11 +367,13 @@ li{
 }
 
 .project-card{
-    width: 38rem;
-    /* height: 380px; */
+    max-width: 38rem;
     background-color: var(--white);
     padding: 1rem 0.5rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -383,12 +384,12 @@ li{
     margin-bottom: 3rem;
     border: solid 2px var(--primary-tint);
     border-radius: 1rem;
+    width: 36.6rem;
+    height: 19.4rem;
 }
 
 .project-img{
-
-    width: 36.6rem;
-    height: 19.4rem;
+    width: 100%;
     border-radius: 10px;
     
 }
@@ -410,13 +411,14 @@ li{
 /* foot-section */
 
 .footer{
-    height: 10rem;
+    /* height: 10rem; */
     background-color: var(--gray-shade);
-    margin: 1rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
     
 }
 
@@ -440,16 +442,12 @@ li{
 }
 
 .project-btn-link{
-    background-color:var(--secondar-base) ;
+    background-color:var(--secondar-base);
 }
 
 .hero-highlight{
 
-    color: var(--secondar-base) ;
+    color: var(--secondar-base);
 }
 
-.tech-highlight{
-    padding: 1.5rem 9rem;
-    background-color: var(--white);
-    border-radius: 1rem;
-}
+

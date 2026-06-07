@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Route,Routes } from 'react-router-dom'
 import './App.css'
+import './Media_querries.css'
 import Home from './pages/home/Home'
 import Skill from './pages/skill/Skill'
 import Expirence from './pages/experience/Experience'
