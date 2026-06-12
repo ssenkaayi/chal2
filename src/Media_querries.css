@@ -8,87 +8,50 @@ small phones.   (390 - 500)px
 
 */
 
-@media(max-width:1195px){
+/*  small laptop screens */
 
-    /* font-size (9px/16px)*100%  = 56.25%*/
+@media(max-width:1199px){
 
     html{
         font-size: 56%;
     }
 
     .page-container{
-        width: 95%;
-    }
-
-    .project-card-container{
-        gap: 1rem;
-        padding: 2rem 0.5rem;
+        max-width: 95%;
     }
 
 }
 
-@media(max-width:1080px){
+/*  Tablet screens */
 
-    html{
-        font-size: 56%;
-    }
-
-    .tech-highlight{
-        padding: 1.5rem 8rem;
-    }
-
-    /* .project-card{
-        width: 31rem;
-    } */
-
-    /* .project-img-container{
-
-        width: 30rem;
-        height: 15.9rem;
-    } */
-}
-
-@media(max-width:1023px){
+@media(max-width:1000px){
     /* font-size (8px/16px)*100%  = 50%*/
 
     html{
         font-size: 50%;
     }
 
-    .tech-highlight{
-        padding: 1.5rem 7rem;
-    }
 }
 
-@media(max-width:830px){
-    /* font-size (8px/16px)*100%  = 50%*/
+/* Min Tablet screens */
 
-
-    .tech-highlight{
-        padding: 1.5rem 6rem;
-    }
-}
-
-@media(max-width:744px){
+@media(max-width:880px){
     /* font-size (7px/16px)*100%  = 43%*/
 
     html{
         font-size: 43%;
     }
 
-    .tech-highlight{
-        padding: 1.5rem 6rem;
-    }
+
 }
 
-@media(max-width:628px){
+/* Mobile screens */
+
+@media(max-width:748px){
     /* font-size (6px/16px)*100%  = 37%*/
 
     html{
         font-size: 37%;
     }
 
-    .tech-highlight{
-        padding: 1.5rem 6rem;
-    }
 }

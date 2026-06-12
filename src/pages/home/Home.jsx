@@ -58,10 +58,12 @@ function Home(){
 
                             <Link to={project.url} key={project.name} className="project-card">
 
-                                <div className="project-img-container">
+                                {/* <div className="project-img-container">
                                     <img className="project-img" src={project.image_path} alt={project.name} />
 
-                                </div>
+                                </div> */}
+
+                                <img className="project-img" src={project.image_path} alt={project.name} />
 
                                 <div className="project-des">
                                     <h5 className="project-h5">{project.name}</h5>

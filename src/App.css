@@ -334,11 +334,12 @@ li{
 
 .tech-stack-heading{
     margin-bottom:4rem ;
+    /* margin-left: 2rem; */
     color: var(--white);
 }
 
 .tech-highlight{
-    padding: 1.5rem 9rem;
+    padding: 1.5rem 8rem;
     background-color: var(--white);
     border-radius: 1rem;
 }
@@ -357,40 +358,44 @@ li{
 .project-card-container{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* gap: 7rem; */
     margin-bottom: 5rem;
     background-color: var(--primary-tint);
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     border-radius: 2rem;
     
 }
 
 .project-card{
-    max-width: 38rem;
+    width: 31rem;
+    height: 31rem;
     background-color: var(--white);
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
 .project-img-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+    /* margin-bottom: 1.6rem;
     border: solid 2px var(--primary-tint);
     border-radius: 1rem;
-    width: 36.6rem;
-    height: 19.4rem;
+    width: 93%; */
+    /* height: 19.4rem; */
 }
 
 .project-img{
-    width: 100%;
-    border-radius: 10px;
+    /* width: 100%;
+    border-radius: 10px; */
+
+    margin-bottom: 1.6rem;
+    border: solid 2px var(--primary-tint);
+    border-radius: 1rem;
+    width: 93%;
     
 }
 
