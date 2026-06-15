@@ -48,9 +48,22 @@ small phones.   (390 - 500)px
         font-size: 43%;
     }
 
-        .tech-highlight{
+    .tech-highlight{
         padding: 1.5rem 7.5rem;
 
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: flex;
+        margin-bottom: 10rem;
+    }
+
+    .mobile-nav-links,.close-svg{
+        display: none;
     }
 }
 

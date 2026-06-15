@@ -207,7 +207,7 @@ li{
 
 /* nav-section */
 
-.nav{
+.nav,.mobile-nav{
     height:10rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -220,6 +220,26 @@ li{
     color: var(--white);
     border-radius: 1rem;
  
+}
+
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+}
+
+.mobile-nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-svg-menu{
+    font-size: 5rem;
+}
+
+.mobile-nav{
+    display: none;
 }
 
 .nav-logo{
