@@ -10,48 +10,66 @@ small phones.   (390 - 500)px
 
 /*  small laptop screens */
 
-@media(max-width:1199px){
+@media(max-width:75rem){
 
     html{
         font-size: 56%;
     }
 
     .page-container{
-        max-width: 95%;
+        max-width: 90%;
     }
-
 }
 
 /*  Tablet screens */
 
-@media(max-width:1000px){
+@media(max-width:62rem){
     /* font-size (8px/16px)*100%  = 50%*/
 
     html{
         font-size: 50%;
     }
-
 }
 
 /* Min Tablet screens */
 
-@media(max-width:880px){
+@media(max-width:55rem){
     /* font-size (7px/16px)*100%  = 43%*/
 
     html{
         font-size: 43%;
     }
-
-
 }
 
 /* Mobile screens */
 
-@media(max-width:748px){
+@media(max-width:47rem){
     /* font-size (6px/16px)*100%  = 37%*/
 
     html{
         font-size: 37%;
     }
+
+
+}
+
+@media(max-width:40rem){
+   
+
+    .tech-highlight{
+        padding: 1.5rem 8rem;
+
+    }
+
+    .tech-stack{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .project-card-container{
+        flex-direction: column;
+
+    }
+
 
 }
