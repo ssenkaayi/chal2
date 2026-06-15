@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu,IoMdCloseCircleOutline } from "react-icons/io";
 
 function Nav(){
     return(
@@ -25,6 +25,7 @@ function Nav(){
 
                     <div className="mobile-menu">
                         < IoMdMenu className="mobile-svg-menu"/>
+                        <IoMdCloseCircleOutline className="mobile-close-svg"/>
                         
                     </div>
                 </div>

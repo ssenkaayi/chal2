@@ -234,11 +234,13 @@ li{
     justify-content: space-between;
 }
 
-.mobile-svg-menu{
+.mobile-svg-menu,.mobile-close-svg{
     font-size: 5rem;
 }
 
-.mobile-nav{
+
+
+.mobile-nav,.mobile-close-svg{
     display: none;
 }
 
