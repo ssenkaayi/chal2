@@ -29,6 +29,14 @@ small phones.   (390 - 500)px
     html{
         font-size: 50%;
     }
+
+    .hero{
+        height: auto;
+    }
+
+    .nav{
+        margin-bottom: 10rem;
+    }
 }
 
 /* Min Tablet screens */
@@ -38,6 +46,11 @@ small phones.   (390 - 500)px
 
     html{
         font-size: 43%;
+    }
+
+        .tech-highlight{
+        padding: 1.5rem 7.5rem;
+
     }
 }
 
@@ -50,16 +63,19 @@ small phones.   (390 - 500)px
         font-size: 37%;
     }
 
+    .tech-highlight{
+        padding: 1.5rem 7.2rem;
 
+    }
 }
 
 @media(max-width:40rem){
    
 
-    .tech-highlight{
+    /* .tech-highlight{
         padding: 1.5rem 8rem;
 
-    }
+    } */
 
     .tech-stack{
         flex-direction: column;
