@@ -53,18 +53,30 @@ small phones.   (390 - 500)px
 
     }
 
-    .nav{
-        display: none;
+    .nav-svg{
+        display: block;
     }
 
-    .mobile-nav{
-        display: flex;
-        margin-bottom: 10rem;
+
+    .nav-menu-links{
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        top: 12rem;
+        right: -100%;
+        background-color: var(--primary-base);      
     }
 
-    .mobile-nav-links,.close-svg{
-        display: none;
+    .nav-menu-links.active{
+        right: 0;
+        border-radius: 0.5rem;
+        padding: 4rem;
+        gap: 4rem;
     }
+
+
 }
 
 /* Mobile screens */

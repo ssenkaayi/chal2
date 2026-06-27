@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
-import recentProjects from "./data"
+import recentProjects from "../../data/data";
 import '../../App.css'
 
 function Home(){
@@ -12,7 +12,7 @@ function Home(){
     let git_path = 'https://github.com/ssenkaayi';
     let linkedIn_path = 'https://www.linkedin.com/in/charles-ssenkaayi-6b6275246/';
 
-    console.log(projects)
+    // console.log(projects)
     return(
         <div >
 

@@ -207,11 +207,10 @@ li{
 
 /* nav-section */
 
-.nav,.mobile-nav{
+.nav{
     height:10rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
-    padding: 0 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -219,41 +218,29 @@ li{
     background-color:var(--primary-base); 
     color: var(--white);
     border-radius: 1rem;
- 
-}
-
-.mobile-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: normal;
-}
-
-.mobile-nav-menu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.mobile-svg-menu,.mobile-close-svg{
-    font-size: 5rem;
-}
-
-
-
-.mobile-nav,.mobile-close-svg{
-    display: none;
+    position: relative;
 }
 
 .nav-logo{
     font-size: 3.2rem;
     font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
 }
 
-.nav-menu{
+.nav-svg{
+    font-size: 5rem;
+    display: none;
+}
+
+.nav-menu-links{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1.8rem;
+    padding: 0 2rem;
     
 }
 
@@ -270,6 +257,7 @@ li{
     justify-content: center;
     align-items: center;
     margin-bottom: var(--section-margin);
+    padding: 0 2rem;
 }
 
 .hero-content-container{
@@ -360,7 +348,7 @@ li{
 }
 
 .tech-highlight{
-    padding: 1.5rem 8rem;
+    padding: 1.5rem 7rem;
     background-color: var(--white);
     border-radius: 1rem;
 }
