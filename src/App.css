@@ -233,6 +233,7 @@ li{
 .nav-svg{
     font-size: 5rem;
     display: none;
+    cursor: pointer;
 }
 
 .nav-menu-links{
