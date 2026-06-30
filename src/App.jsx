@@ -16,13 +16,13 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/chal2/">
         <Routes>
           <Route element={<Layout/>}>
-            <Route path='/chal2/' index element={<Home />} />
-            <Route path="/chal2/skill" element={<Skill />} />
-            <Route path="/chal2/experience" element={<Expirence />} />
-            <Route path="/chal2/about" element={<About />} />
+            <Route  index element={<Home />} />
+            <Route path="/skill" element={<Skill />} />
+            <Route path="/experience" element={<Expirence />} />
+            <Route path="/about" element={<About />} />
           </Route>
 
         </Routes>
