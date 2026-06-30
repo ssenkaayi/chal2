@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter basename="/chal2/">
         <Routes>
           <Route element={<Layout/>}>
-            <Route  index element={<Home />} />
+            <Route path='/' index element={<Home />} />
             <Route path="/skill" element={<Skill />} />
             <Route path="/experience" element={<Expirence />} />
             <Route path="/about" element={<About />} />
