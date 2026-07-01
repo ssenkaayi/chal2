@@ -1,10 +1,11 @@
 
+// let project1 = "/chal2/src/images/project-images/tour.png";
+// let project2 = "/chal2/src/images/project-images/quil.png";
+// let project3 = "/chal2/src/images/project-images/portfolio.png";
 
-let project1 = "/chal2/src/images/project-images/tour.png";
-let project2 = "/chal2/src/images/project-images/quil.png";
-let project3 = "/chal2/src/images/project-images/portfolio.png";
-
-
+import project1 from "../images/project-images/tour.png";
+import project2 from "../images/project-images/quil.png";
+import project3 from "../images/project-images/portfolio.png";
 
 const recentProjects = [
 
@@ -28,7 +29,5 @@ const recentProjects = [
     },
 
 ];
-
-
 
 export default recentProjects
