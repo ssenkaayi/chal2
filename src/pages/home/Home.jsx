@@ -27,8 +27,9 @@ function Home(){
                     </h1>
                     <p className="hero-para">Skilled in HTML, CSS and Javascript</p>
                     <ul className="hero-social-links">
-                        <li><Link className="btn hero-btn-link" to={resume_path }>Resume</Link></li>
+                        
                         <Link to={git_path } className="hero-svg-container"><PiGithubLogoFill className="hero-svg  git-svg"/></Link>
+                        <li><Link className="btn hero-btn-link" to={resume_path }>Resume</Link></li>
                         <Link to={linkedIn_path } className="hero-svg-container"><FaLinkedinIn className="hero-svg linkedIn-svg"/></Link>
                     </ul>
                 </div>
