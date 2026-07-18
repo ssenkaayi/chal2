@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 import recentProjects from "../../data/data";
 import '../../App.css'
+import './home.css'
 
 function Home(){
 
