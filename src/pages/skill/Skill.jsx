@@ -1,4 +1,5 @@
 import './skill.css'
+import { Link } from "react-router-dom"
 
 function Skill(){
     return(
@@ -7,7 +8,8 @@ function Skill(){
         <nav className="skill-hero">
             <div >
                 <h1 className='hero-heading4'>What i do</h1>
-                <p className='hero-para'>Craft robust, secure and cross-bowser web apps.</p>
+                <p className='skill-hero-para'>Craft robust, secure and cross-bowser web apps.</p>
+                <span className="project-link"><Link  className="btn project-btn-link" to='/experience'  >Explore</Link></span>
             </div>
         </nav>
 
@@ -24,30 +26,31 @@ function Skill(){
                 <div className='feature-card-container'>
 
                     <div className='feature-card'>
-                        <h3>frontend</h3>
+                        <h3 className='feature-card-heading'>Frontend</h3>
                         <p>Responsive layouts</p>
-                        <p>Cross-browser compatibility</p>
+                        <p>Browser compatibility</p>
                         <p>State management</p>
                         <p>Version Control</p>
                         <p>Api integration</p>
                     </div>
 
-                    <div>
-                        <h3>Backend</h3>
+                    <div className='feature-card'>
+                        <h3 className='feature-card-heading'>Backend</h3>
                         <p>Api development</p>
                         <p>Api Authentication</p>
                         <p>Api Authorisation</p>
-                        <p>Database design and development</p>
-                        <p>DevOps and Deployment </p>
+                        <p>Database design</p>
+                        <p>DevOps & Deployment </p>
                     </div>
 
-                    <div>
-                        <h3>Soft Skills</h3>
-                        <p>Code deburging and testing</p>
+                    <div className='feature-card'>
+                        <h3 className='feature-card-heading'>Others</h3>
+                        <p>Code deburging </p>
+                        <p>Code testing</p>
                         <p>Research</p>
                         <p>Report writing</p>
                         <p>Communication</p>
-                        <p>Trouble shooting</p>
+                        
                     </div>
                 </div>
 
@@ -55,14 +58,14 @@ function Skill(){
 
             <div className='strategy-container'>
 
-                <h2>How i do it</h2>
-                <p className='strategy-para'>Four stages, no shortcuts</p>
+                <h2>How it's done</h2>
+                <p className='strategy-para'>In four stages, no shortcuts!</p>
 
                 <div className="strategy-card-container">
 
                     <div className='strategy-card'>
-                        <h3>
-                            1 Research
+                        <h3 className='startegy-heading'>
+                            <span className='number-highlight'>1</span> Research
                         </h3>
                         <p>
                             
@@ -70,9 +73,9 @@ function Skill(){
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
-                            2 Methodology
+                    <div className='strategy-card'>
+                        <h3 className='startegy-heading'>
+                            <span className='number-highlight'>2</span> Methodology
                         </h3>
                         <p>
                             
@@ -80,19 +83,19 @@ function Skill(){
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
-                            3 Planning
+                    <div className='strategy-card'>
+                        <h3 className='startegy-heading'>
+                            <span className='number-highlight'>3</span> Planning
                         </h3>
                         <p>
                             
-                               Planning and timeline development
+                               Planning and laying timelines 
                         </p>
                     </div>
 
-                    <div>
-                        <h3>
-                           4 Delivery
+                    <div className='strategy-card'>
+                        <h3 className='startegy-heading'>
+                           <span className='number-highlight'>4</span> Delivery
                         </h3>
                         <p>
                             

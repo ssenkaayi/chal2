@@ -1,11 +1,18 @@
 /* styling famework
 
 -------- Text Content -------- 
-spacing
+
+SPECS
+
+spacing / centering / alignment
 styling
 size
 font
 color
+
+TOOLS
+
+text-aligment
 
 -------- element / Box css -------- 
 margin
@@ -16,6 +23,10 @@ width
 -------- element container -------- 
 */
 
+span{
+    display: inline-block;
+}
+
 /* Hero section */
 
 .skill-hero{
@@ -24,16 +35,34 @@ width
     display: flex;
     align-items: center;
     justify-content: center; 
+    border: 2px solid #EFF2F5;
+    background-color: #EFF2F5;
+    border-radius: 1rem;
+    margin-bottom: 10rem;
 }
 
 .hero-heading{
     margin-bottom: 1rem;
 }
 
+.skill-hero-para{
+    color:#1e5892;
+    margin-bottom: 5rem;
+}
+
+.project-btn-link{
+    color: #fff;
+}
+
 /* Feature section */
 
 .feature-container{
     margin-bottom: 10rem;
+    background-color: #bfd8f1;
+    border: 2px solid #bfd8f1;
+    border-radius: 1rem;
+    padding: 5rem;
+   
 }
 
 .feature-text-content{
@@ -42,31 +71,72 @@ width
 
 .feature-para{
     text-align: center;
+    color:#1e5892;
 }
 .feature-card-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 5rem;
 }
-/* .feature-card{
-    padding: 3.2rem;
-} */
+
+.feature-card{
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    width: 300px;
+}
+
+.feature-card-heading{
+    color: #FF8D28;
+    margin-bottom: 1rem;
+}
 
 /* Strategy Section*/
+.startegy-heading{
+    color: #FF8D28;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
 .strategy-para{
     text-align: center;
     margin-bottom: 5rem;
+    color:#1e5892;
+}
+
+.number-highlight{
+    background-color: #FF8D28;
+    color: #EFF2F5;
+    height: 5rem;
+    width: 5rem ;
+    text-align: center;
+    border-radius: 50%;
 }
 
 .strategy-container{
   margin-bottom: 10rem;
+  background-color: #EFF2F5;
+  border: 2px solid #EFF2F5;
+  border-radius: 1rem;
+  padding: 5rem;
   
 }
 
 .strategy-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    gap:4rem;
+}
+
+.strategy-card{
+
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
 }
 
