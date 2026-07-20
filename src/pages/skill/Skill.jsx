@@ -1,5 +1,6 @@
-import './skill.css'
-import { Link } from "react-router-dom"
+import './skill.css';
+import '../../App.css';
+import { Link } from "react-router-dom";
 
 function Skill(){
     return(
@@ -58,7 +59,7 @@ function Skill(){
 
             <div className='strategy-container'>
 
-                <h2>How it's done</h2>
+                <h2 className='strategy-heading'>How it's archived</h2>
                 <p className='strategy-para'>In four stages, no shortcuts!</p>
 
                 <div className="strategy-card-container">

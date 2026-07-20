@@ -13,6 +13,10 @@ color
 TOOLS
 
 text-aligment
+line-height
+letter-spacing
+
+font-weight
 
 -------- element / Box css -------- 
 margin
@@ -23,9 +27,9 @@ width
 -------- element container -------- 
 */
 
-span{
+/* span{
     display: inline-block;
-}
+} */
 
 /* Hero section */
 
@@ -35,8 +39,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center; 
-    border: 2px solid #EFF2F5;
-    background-color: #EFF2F5;
+    border: 2px solid var(--gray-tint);
+    background-color: var(--gray-tint);
     border-radius: 1rem;
     margin-bottom: 10rem;
 }
@@ -51,15 +55,15 @@ span{
 }
 
 .project-btn-link{
-    color: #fff;
+    color: var(--white);
 }
 
 /* Feature section */
 
 .feature-container{
     margin-bottom: 10rem;
-    background-color: #bfd8f1;
-    border: 2px solid #bfd8f1;
+    background-color: var(--primary-tint);
+    border: 2px solid var(--primary-tint);
     border-radius: 1rem;
     padding: 5rem;
    
@@ -71,7 +75,7 @@ span{
 
 .feature-para{
     text-align: center;
-    color:#1e5892;
+    color: var(--primary-shade);
 }
 .feature-card-container{
     display: flex;
@@ -82,35 +86,40 @@ span{
 
 .feature-card{
     padding: 2rem 4rem;
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: var(--white);
+    border: 2px solid var(--white);
     border-radius: 1rem;
     width: 300px;
 }
 
 .feature-card-heading{
-    color: #FF8D28;
+    color: var(--secondar-shade);
     margin-bottom: 1rem;
 }
 
 /* Strategy Section*/
+
 .startegy-heading{
-    color: #FF8D28;
+    color: var(--secondar-base);
     display: flex;
     gap: 2rem;
     align-items: center;
     margin-bottom: 1rem;
 }
 
+.strategy-heading{
+    margin-bottom: 1rem;
+}
+
 .strategy-para{
     text-align: center;
     margin-bottom: 5rem;
-    color:#1e5892;
+    color: var(--primary-shade);
 }
 
 .number-highlight{
-    background-color: #FF8D28;
-    color: #EFF2F5;
+    background-color: var(--secondar-base);
+    color: var(--gray-tint);
     height: 5rem;
     width: 5rem ;
     text-align: center;
@@ -119,8 +128,8 @@ span{
 
 .strategy-container{
   margin-bottom: 10rem;
-  background-color: #EFF2F5;
-  border: 2px solid #EFF2F5;
+  background-color: var(--gray-tint);
+  border: 2px solid var(--gray-tint);
   border-radius: 1rem;
   padding: 5rem;
   
@@ -134,8 +143,8 @@ span{
 
 .strategy-card{
 
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: var(--white);
+    border: 2px solid var(--white);
     border-radius: 1rem;
     padding: 2rem 4rem;
 }
