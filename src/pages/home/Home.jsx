@@ -5,6 +5,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import recentProjects from "../../data/data";
 import '../../App.css'
 import './home.css'
+// import '../../Media_querries.css'
 
 function Home(){
 
@@ -20,19 +21,24 @@ function Home(){
             <div className="hero">
 
                 <div className="hero-content-container">
+
                     <h3 className="hero-h3">
                         Hello, my name is Charles Ssenkaayi
                     </h3>
+
                     <h1 className="hero-h1">
                         And i am a <span className="hero-highlight">Web Developer</span> 
                     </h1>
+
                     <p className="hero-para">Skilled in HTML, CSS and Javascript</p>
+
                     <ul className="hero-social-links">
                         
                         <Link to={git_path } className="hero-svg-container"><PiGithubLogoFill className="hero-svg  git-svg"/></Link>
                         <li><Link className="btn hero-btn-link" to={resume_path }>Resume</Link></li>
                         <Link to={linkedIn_path } className="hero-svg-container"><FaLinkedinIn className="hero-svg linkedIn-svg"/></Link>
                     </ul>
+                    
                 </div>
 
             </div>
@@ -51,9 +57,9 @@ function Home(){
                     </ul>
                 </div>
 
-                <div className="projects">
+                <div className="projects-container">
 
-                    <h3 className="project-h3">Projects</h3>
+                    <h3 className="project-h3">Recent Projects</h3>
 
                     <div className="project-card-container">
                         {projects.map((project)=>
@@ -73,7 +79,7 @@ function Home(){
                         )}
                     </div>
 
-                    <span className="project-link"><Link  className="btn project-btn-link" to='/experience'  >More projects +</Link></span>
+                    <li><Link  className="btn project-btn-link" to='/experience'  >More projects +</Link></li>
 
                 </div>
             </div>

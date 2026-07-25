@@ -90,7 +90,7 @@ function Skill(){
                         </h3>
                         <p>
                             
-                               Planning and laying timelines 
+                            Planning and laying timelines 
                         </p>
                     </div>
 

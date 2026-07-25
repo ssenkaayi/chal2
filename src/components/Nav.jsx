@@ -18,30 +18,29 @@ function Nav(){
         <>
             <div className="nav">
 
-                <div className="nav-logo">
-                    Chal2
+                <h3 className="nav-logo"> Chal2 </h3>
 
+                <div>
                     {clicked? <IoMdCloseCircleOutline className="nav-svg" onClick={changeState}/>
                     : < IoMdMenu className="nav-svg" onClick={changeState}/>  }
+
+                    <ul className= {clicked ? "nav-menu-links active" :"nav-menu-links"}>
+
+                        {menu.map((item)=>{
+
+                            return(                       
+
+                                <li key={item.name}> 
+                                    <Link className="nav-links" to={item.path} onClick={changeState}>{item.name}</Link>
+                                </li>
+                                
+                            )
+
+                        })}
+
+                    </ul>
                 </div>
 
-                
-
-                <ul className= {clicked ? "nav-menu-links active" :"nav-menu-links"}>
-
-                    {menu.map((item)=>{
-
-                        return(                       
-
-                            <li key={item.name}> 
-                                <Link className="nav-links" to={item.path} onClick={changeState}>{item.name}</Link>
-                            </li>
-                            
-                        )
-
-                    })}
-
-                </ul>
 
             </div>
 
