@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 import recentProjects from "../../data/data";
-import '../../App.css'
+// import '../../App.css'
 import './home.css'
-// import '../../Media_querries.css'
+import '../media_querries.css'
 
 function Home(){
 

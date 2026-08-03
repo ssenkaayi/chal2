@@ -78,10 +78,12 @@ width
     color: var(--primary-shade);
 }
 .feature-card-container{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .feature-card{
@@ -89,7 +91,7 @@ width
     background-color: var(--white);
     border: 2px solid var(--white);
     border-radius: 1rem;
-    width: 300px;
+    /* width: 300px; */
 }
 
 .feature-card-heading{

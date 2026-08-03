@@ -32,10 +32,16 @@ small phones.   (390 - 500)px
 
     .hero{
         height: auto;
+        padding: 10rem 4rem;
     }
 
     .nav{
         margin-bottom: 10rem;
+    }
+
+    .tech-highlight{
+        padding: 1.5rem 6.8rem;
+
     }
 }
 
@@ -49,17 +55,20 @@ small phones.   (390 - 500)px
     }
 
     .tech-highlight{
-        padding: 1.5rem 7.5rem;
+        padding: 1.5rem 6.5rem;
 
     }
 
     .nav-svg{
         display: block;
     }
+    
+
 
     .project-card-container{
         
         grid-template-columns: 1fr 1fr;
+        row-gap: 4rem;
     }
 
     .nav-menu-links{
@@ -90,15 +99,16 @@ small phones.   (390 - 500)px
         font-size: 37%;
     }
 
+    .page-container{
+        max-width: 95%;
+    }
+
     .tech-highlight{
-        padding: 1.5rem 7.2rem;
+        padding: 1.5rem 7rem;
 
     }
 
-    .project-card-container{
-        
-        grid-template-columns: 1fr;
-    }
+
 }
 
 /* Mobile screens w: 640px*/
@@ -116,8 +126,14 @@ small phones.   (390 - 500)px
         gap:2rem;
     }
 
+    .project-des{
+        text-align: left;
+    }
+
     .project-card-container{
-        grid-template-columns: 1fr ;
+        
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
     }
 
 
