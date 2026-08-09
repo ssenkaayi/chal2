@@ -6,11 +6,11 @@ import navMenu from "./menu"
 function Nav(){
 
     const [clicked, setClicked] = useState(false);
-    const [menu,setMenu] = useState(navMenu);
+    // const [menu,setMenu] = useState(navMenu);
     // console.log(navMenu)
     const changeState = ()=>{
 
-        setClicked(!clicked);
+        setClicked(prev => !prev);
     }
     
     return(
@@ -26,7 +26,7 @@ function Nav(){
 
                     <ul className= {clicked ? "nav-menu-links active" :"nav-menu-links"}>
 
-                        {menu.map((item)=>{
+                        {navMenu.map((item)=>{
 
                             return(                       
 

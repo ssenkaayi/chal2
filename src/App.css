@@ -211,10 +211,11 @@ span{
 .page-container{
     max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
 }
 
 
-.grid-box{
+.universal-grid-box{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
@@ -226,9 +227,9 @@ span{
 
 } */
 
-.flex-box{
+/* .flex-box{
     display: flex;
-}
+} */
 
 /* .flex-item{
     

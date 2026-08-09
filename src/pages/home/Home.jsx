@@ -61,7 +61,7 @@ function Home(){
 
                     <h3 className="project-h3">Recent Projects</h3>
 
-                    <div className="project-card-container">
+                    <div className="universal-grid-box">
                         {projects.map((project)=>
 
                             <Link to={project.url} key={project.name} className="project-card">

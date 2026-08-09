@@ -24,7 +24,7 @@ function Skill(){
                 </div>
 
 
-                <div className='feature-card-container'>
+                <div className='universal-grid-box'>
 
                     <div className='feature-card'>
                         <h3 className='feature-card-heading'>Frontend</h3>
@@ -76,7 +76,7 @@ function Skill(){
 
                     <div className='strategy-card'>
                         <h3 className='startegy-heading'>
-                            <span className='number-highlight'>2</span> Methodology
+                            <span className='number-highlight'>2</span> Approach
                         </h3>
                         <p>
                             

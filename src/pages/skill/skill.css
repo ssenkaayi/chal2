@@ -65,7 +65,7 @@ width
     background-color: var(--primary-tint);
     border: 2px solid var(--primary-tint);
     border-radius: 1rem;
-    padding: 5rem;
+    padding: 4rem 2rem;
    
 }
 
@@ -78,8 +78,7 @@ width
     color: var(--primary-shade);
 }
 .feature-card-container{
-    /* display: flex;
-    flex-direction: row; */
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -87,7 +86,7 @@ width
 }
 
 .feature-card{
-    padding: 2rem 4rem;
+    padding: 2rem;
     background-color: var(--white);
     border: 2px solid var(--white);
     border-radius: 1rem;

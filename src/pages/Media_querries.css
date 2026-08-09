@@ -1,10 +1,15 @@
-/*  
 
-Large tablets   (1024 - 1200)px
-small tablets.  (744 -  1023)px
 
-large phones    (500 -743)px
-small phones.   (390 - 500)px
+/* 
+standard media querries
+
+( 1200 - 993 )px small computers
+
+( 992 - 769 )px  big tablets computers tablets
+
+( 768 - 500 )px small Tablets 
+ 
+( < 500 )px phones
 
 */
 
@@ -12,18 +17,21 @@ small phones.   (390 - 500)px
 
 @media(max-width:75rem){
 
+    /* font-size (9px/16px)*100%  = 56%*/
+
     html{
         font-size: 56%;
     }
 
     .page-container{
-        max-width: 90%;
+        width: 90%;
     }
 }
 
-/*  Tablet screens w: 992px*/
+/*  Big Tablet screens w: 992px*/
 
 @media(max-width:62rem){
+
     /* font-size (8px/16px)*100%  = 50%*/
 
     html{
@@ -40,14 +48,20 @@ small phones.   (390 - 500)px
     }
 
     .tech-highlight{
-        padding: 1.5rem 6.8rem;
+        padding: 1.5rem 6rem;
 
+    }
+
+    .universal-grid-box{
+        row-gap: 1rem;
+        column-gap: 1rem;
     }
 }
 
-/* Min Tablet screens w: 880px*/
+/* Small Tablet screens w: 784px*/
 
-@media(max-width:55rem){
+@media(max-width:51rem){
+
     /* font-size (7px/16px)*100%  = 43%*/
 
     html{
@@ -55,7 +69,7 @@ small phones.   (390 - 500)px
     }
 
     .tech-highlight{
-        padding: 1.5rem 6.5rem;
+        padding: 1.5rem 6rem;
 
     }
 
@@ -63,63 +77,46 @@ small phones.   (390 - 500)px
         display: block;
     }
     
-
-
-    .project-card-container{
+    .universal-grid-box{
         
         grid-template-columns: 1fr 1fr;
         row-gap: 4rem;
+        column-gap: 2rem;
     }
 
     .nav-menu-links{
-    
+        display: none;
         flex-direction: column;
-        justify-content: center;
         align-items:center;
         position: absolute;
-        top: 12rem;
-        right: -100%;
+        top:12rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
         background-color: var(--primary-base); 
     }
 
     .nav-menu-links.active{
-        right: 0;
+        display: flex;
         border-radius: 0.5rem;
         padding: 4rem;
-        gap: 4rem;
+        gap: 4rem; 
     }
 }
 
-/* Mobile screens w: 752px*/
+/* Mobile screens w: < 500px*/
 
-@media(max-width:47rem){
+@media(max-width:40rem){
+
     /* font-size (6px/16px)*100%  = 37%*/
-
+   
     html{
         font-size: 37%;
     }
 
-    .page-container{
-        max-width: 95%;
-    }
-
     .tech-highlight{
-        padding: 1.5rem 7rem;
-
+        padding: 1.5rem 6rem;
     }
-
-
-}
-
-/* Mobile screens w: 640px*/
-
-@media(max-width:40rem){
-   
-
-    /* .tech-highlight{
-        padding: 1.5rem 8rem;
-
-    } */
 
     .tech-stack{
         flex-direction: column;
@@ -130,11 +127,13 @@ small phones.   (390 - 500)px
         text-align: left;
     }
 
-    .project-card-container{
+    .universal-grid-box{
         
         grid-template-columns: 1fr;
-        row-gap: 5rem;
+        row-gap: 2rem;
     }
 
-
+    .strategy-card-container{
+        grid-template-columns: 1fr;
+    }
 }
