@@ -3,13 +3,12 @@ import { Link } from "react-router-dom"
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 import recentProjects from "../../data/data";
-// import '../../App.css'
 import './home.css'
 import '../media_querries.css'
 
 function Home(){
 
-    const [projects,setProject] = useState(recentProjects);
+    const projects = recentProjects;
     let resume_path = 'https://drive.google.com/file/d/1jOREjW-7AdR2r6MgmD-rt3Z1Lp7QigdN/view?usp=sharing';
     let git_path = 'https://github.com/ssenkaayi';
     let linkedIn_path = 'https://www.linkedin.com/in/charles-ssenkaayi-6b6275246/';

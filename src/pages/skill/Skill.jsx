@@ -1,5 +1,6 @@
 import './skill.css';
 import '../../App.css';
+import '../media_querries.css'
 import { Link } from "react-router-dom";
 
 function Skill(){

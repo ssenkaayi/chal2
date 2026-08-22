@@ -150,3 +150,9 @@ width
     padding: 2rem 4rem;
 }
 
+@media(max-width:40rem){
+
+    .strategy-card-container{
+        grid-template-columns: 1fr;
+    }
+}
